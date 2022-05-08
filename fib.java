@@ -1,22 +1,14 @@
-class DivByZero {
+class RTErrorDemo {
     public static void main(String args[])
     {
-        int var1 = 15;
-        int var2 = 5;
-        int var3 = 0;
-        int ans1 = var1 / var2;
+        int arr[] = new int[5];
   
-        // This statement causes a runtime error,
-        // as 15 is getting divided by 0 here
-        int ans2 = var1 / var3;
+        // Array size is 5
+        // whereas this statement assigns
   
-        System.out.println(
-            "Division of va1"
-            + " by var2 is: "
-            + ans1);
-        System.out.println(
-            "Division of va1"
-            + " by var3 is: "
-            + ans2);
+        // value 250 at the 10th position.
+        arr[9] = 250;
+  
+        System.out.println("Value assigned! ");
     }
 }
