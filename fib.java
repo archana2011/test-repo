@@ -1,15 +1,22 @@
-class FibonacciExample1{  
-public static void main(String args[])  
-{    
- int n1=0,n2=1,n3,i,count=10;    
- System.out.print(n1+" "+n2);//printing 0 and 1    
-    
- for(i=2;i<count;++i)//loop starts from 2 because 0 and 1 are already printed    
- {    
-  n3=n1+n2;    
-  System.out.print(" "+n3);    
-  n1=n2;    
-  n2=n3;    
- }    
+class DivByZero {
+    public static void main(String args[])
+    {
+        int var1 = 15;
+        int var2 = 5;
+        int var3 = 0;
+        int ans1 = var1 / var2;
   
-}} 
+        // This statement causes a runtime error,
+        // as 15 is getting divided by 0 here
+        int ans2 = var1 / var3;
+  
+        System.out.println(
+            "Division of va1"
+            + " by var2 is: "
+            + ans1);
+        System.out.println(
+            "Division of va1"
+            + " by var3 is: "
+            + ans2);
+    }
+}
